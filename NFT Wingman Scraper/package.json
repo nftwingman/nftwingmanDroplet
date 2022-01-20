@@ -4,7 +4,7 @@
   "description": "",
   "main": "syncWorker.js",
   "scripts": {
-    "sync:dev": "nodemon syncWorker.js"
+    "start": "nodemon syncWorker.js"
   },
   "author": "",
   "license": "ISC",
