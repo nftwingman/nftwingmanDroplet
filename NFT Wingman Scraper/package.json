@@ -1,0 +1,20 @@
+{
+  "name": "nftwingmanscraper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "syncWorker.js",
+  "scripts": {
+    "sync:dev": "nodemon syncWorker.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^14.2.0",
+    "mongoose": "^6.1.7",
+    "node-cron": "^3.0.0",
+    "puppeteer": "^13.1.1",
+    "puppeteer-extra": "^3.2.3",
+    "puppeteer-extra-plugin-anonymize-ua": "^2.3.3",
+    "puppeteer-extra-plugin-stealth": "^2.9.0"
+  }
+}
