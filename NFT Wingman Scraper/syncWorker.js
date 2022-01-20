@@ -33,21 +33,6 @@ mongoose
 
 try {
   cron.schedule(
-    "0 5 * * *",
-    () => {
-      syncOpenseaPricesSplit(1);
-    },
-    {
-      scheduled: true,
-      timezone: "America/Vancouver",
-    }
-  );
-} catch (err) {
-  console.log(err);
-}
-
-try {
-  cron.schedule(
     "0 6 * * *",
     () => {
       syncOpenseaPricesSplit(1);
@@ -63,7 +48,7 @@ try {
 
 try {
   cron.schedule(
-    "0 21 * * *",
+    "40 9 * * *",
     () => {
       syncOpenseaPricesSplit(1);
     },
@@ -76,17 +61,32 @@ try {
   console.log(err);
 }
 
-// try {
-//   cron.schedule(
-//     "7 20 * * *",
-//     () => {
-//       syncOpenseaPricesSplit(1);
-//     },
-//     {
-//       scheduled: true,
-//       timezone: "America/Vancouver",
-//     }
-//   );
-// } catch (err) {
-//   console.log(err);
-// }
+try {
+  cron.schedule(
+    "0 13 * * *",
+    () => {
+      syncOpenseaPricesSplit(1);
+    },
+    {
+      scheduled: true,
+      timezone: "America/Vancouver",
+    }
+  );
+} catch (err) {
+  console.log(err);
+}
+
+try {
+  cron.schedule(
+    "0 18 * * *",
+    () => {
+      syncOpenseaPricesSplit(1);
+    },
+    {
+      scheduled: true,
+      timezone: "America/Vancouver",
+    }
+  );
+} catch (err) {
+  console.log(err);
+}
